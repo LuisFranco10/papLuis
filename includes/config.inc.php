@@ -2,5 +2,5 @@
 define("HOST","localhost");
 define("USER","root");
 define("PASS","");
-define("DB","futebol");
+define("DB","pap2021LuisFranco");
 ?>
