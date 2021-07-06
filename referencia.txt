@@ -1,0 +1,3 @@
+Login para administradores
+Registar diferentes administradores
+Supporte pode ir para o caralho
