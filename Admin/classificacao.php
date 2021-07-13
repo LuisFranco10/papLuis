@@ -51,29 +51,6 @@ drawTop();
 
 
         <?php
-        while ($dados = mysqli_fetch_array($result)) {
-            ?>
-
-            <tr class="active" data-number="1">
-                <td><a class="nolink"><?php echo $dados['clubeId'] ?></a></td>
-                <td><a class="nolink"><?php echo $dados['clubeNome'] ?></a></td>
-                <td><a class="nolink"><?php echo $dados['clubeEstadioURL'] ?> </a></td>
-                <td><a class="nolink"><?php echo $dados['clubeFundacao'] ?></a></td>
-                <td><a class="nolink"><?php echo $dados['clubePresidenteNome'] ?> </a></td>
-                <td><img id="img1" src="../<?php echo $dados['clubeLogoImgUrl'] ?>"></td>
-                <td><a class="nolink"><?php echo $dados['clube'] ?> </a></td>
-                <td><img id="img1" src="../<?php echo $dados['marcasImgUrl'] ?>"></td>
-                <td><a href="editar_marcas.php"><i class="btn btn-primary fas fa-edit text-primary"></i></a><p></p>
-                    <a href="#" onclick="confirmaEliminaM(<?php echo $dados['marcasId'] ?>)"><i class="btn btn-danger fas fa-trash  text-danger" ></i></a></td>
-            </tr
-
-            <?php
-        }
-
-        ?>
-
-
-        <?php
         /*
               while ($row = $result->fetch_assoc()) {
                    echo "<tr>";
