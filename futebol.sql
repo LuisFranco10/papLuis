@@ -27,17 +27,17 @@ CREATE TABLE `clubes`  (
   `clubeEstadioURL` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `clubeFundacao` int(11) NOT NULL,
   `clubePresidenteNome` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `clubeSkin` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `clubeLogoURL` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `clubeSkin` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci,
   PRIMARY KEY (`clubeId`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of clubes
 -- ----------------------------
-INSERT INTO `clubes` VALUES (1, 'Sporting Clube de Portugal', 'imagens/estadios/alvalade.jpg', 1906, 'Frederico Varandas', '24, 110, 69', 'imagens/logos/sporting.png');
-INSERT INTO `clubes` VALUES (2, 'Sport Lisboa e Benfica', 'imagens/estadios/luz.jpg', 1904, 'Luís Filipe Vieira', '255, 13, 0', 'imagens/logos/benfica.png');
-INSERT INTO `clubes` VALUES (3, 'Futebol Clube do Porto', 'imagens/estadios/dragao.jpg', 1898, 'Jorge Nuno Pinto da Costa', '1, 18, 90', 'imagens/logos/porto.png');
+INSERT INTO `clubes` VALUES (1, 'Sporting Clube de Portugal', 'imagens/estadios/alvalade.jpg', 1906, 'Frederico Varandas', 'imagens/logos/sporting.png', '24, 110, 69');
+INSERT INTO `clubes` VALUES (2, 'Sport Lisboa e Benfica', 'imagens/estadios/luz.jpg', 1904, 'Luís Filipe Vieira', 'imagens/logos/benfica.png', '255, 13, 0');
+INSERT INTO `clubes` VALUES (3, 'Futebol Clube do Porto', 'imagens/estadios/dragao.jpg', 1898, 'Jorge Nuno Pinto da Costa', 'imagens/logos/porto.png', '1, 18, 90');
 
 -- ----------------------------
 -- Table structure for epocas

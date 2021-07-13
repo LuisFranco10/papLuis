@@ -10,9 +10,7 @@ $con = mysqli_connect("localhost:3306","root","","futebol");
         <div class="row my-4">
             <div class="col-4 ">
                 <div class="col text-center">
-                    <div class="desc animate-box">
-                        <button class="btn btn-primary" style="height: 60px; width: 300px" onclick="location.href='index.php'"><strong> VOLTAR </strong></a><i class="fas fa-arrow-left"></i></i></button>
-                    </div>
+
                 </div>
                 <h1 align="center"><img src="./imgs/123.jpg""></h1>
 
@@ -40,17 +38,25 @@ $con = mysqli_connect("localhost:3306","root","","futebol");
             </thead>
             <tbody>
 
-            <tr>
-                <td class="text-center" width="10%"> 1 </td>
-                <td class="text-center" width="20%"> Sporting </td>
-                <td class="text-left" width="10%"> 1 </td>
-                <td class="text-center" width="10%"> 1 </td>
-                <td class="text-center" width="10%"> 0 </td>
-                <td class="text-center" width="10%"> 0 </td>
-                <td class="text-center" width="10%"> 1 </td>
-                <td class="text-center" width="10%"> 0 </td>
-                <td class="text-center" width="10%"> 3 </td>
-            </tr>
+<?php
+$sql="select * from clubes";
+$result=mysqli_query($con,$sql);
+while ($dados = mysqli_fetch_array($result)){
+    ?>
+
+    <tr>
+
+<tr>
+
+    <td class="text-center" width="10%"><?php echo $dados['clubeId']?></td>
+    <td class="text-center" width="35%"><?php echo $dados['clubeNome']?></td>
+    <td class="text-center" width="15%"><?php echo $dados['clubeFundacao']?></td>
+    <td class="text-center" width="30%"><?php echo $dados['clubePresidenteNome']?></td>
+    <td class="text-center" width="30%"><?php echo $dados['clubeLogoURL']?></td>
+
+</tr>
+
+    </tr>
 
 
             <?php
@@ -73,6 +79,9 @@ $con = mysqli_connect("localhost:3306","root","","futebol");
         <p>
         </p>
     </div>
+    <?php
+}
+?>
 <?php
 drawBottom();
 ?>

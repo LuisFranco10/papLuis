@@ -1,7 +1,9 @@
 <?php
 include_once ("includes/body.inc.php");
+$con = mysqli_connect("localhost:3306","root","","futebol");$id=intval($_GET['id']);
 $id=intval($_GET['id']);
 $sql="select * from clubes where clubeId=$id";
+$result = mysqli_query($con, $sql);
 drawTop();
 ?>
 
@@ -37,19 +39,6 @@ drawTop();
         </thead>
         <tbody>
 
-        <tr>
-            <td class="text-center" width="10%"> 1 </td>
-            <td class="text-center" width="20%"> Sporting </td>
-            <td class="text-left" width="10%"> 1 </td>
-            <td class="text-center" width="10%"> 1 </td>
-            <td class="text-center" width="10%"> 0 </td>
-            <td class="text-center" width="10%"> 0 </td>
-            <td class="text-center" width="10%"> 1 </td>
-            <td class="text-center" width="10%"> 0 </td>
-            <td class="text-center" width="10%"> 3 </td>
-        </tr>
-
-
         <?php
         while ($dados = mysqli_fetch_array($result)) {
             ?>
@@ -57,14 +46,13 @@ drawTop();
             <tr class="active" data-number="1">
                 <td><a class="nolink"><?php echo $dados['clubeId'] ?></a></td>
                 <td><a class="nolink"><?php echo $dados['clubeNome'] ?></a></td>
-                <td><a class="nolink"><?php echo $dados['clubeEstadioURL'] ?> </a></td>
+                <td><img id="img1" src="../<?php echo $dados['clubeEstadioURL'] ?>"></td>
                 <td><a class="nolink"><?php echo $dados['clubeFundacao'] ?></a></td>
                 <td><a class="nolink"><?php echo $dados['clubePresidenteNome'] ?> </a></td>
                 <td><img id="img1" src="../<?php echo $dados['clubeLogoImgUrl'] ?>"></td>
                 <td><a class="nolink"><?php echo $dados['clube'] ?> </a></td>
-                <td><img id="img1" src="../<?php echo $dados['marcasImgUrl'] ?>"></td>
-                <td><a href="editar_marcas.php"><i class="btn btn-primary fas fa-edit text-primary"></i></a><p></p>
-                    <a href="#" onclick="confirmaEliminaM(<?php echo $dados['marcasId'] ?>)"><i class="btn btn-danger fas fa-trash  text-danger" ></i></a></td>
+                <td><a href="jogador.php"><i class="btn btn-primary fas fa-edit text-primary"></i></a><p></p>
+                    <a href="#" onclick="confirmaElimina(<?php echo $dados['clubeId'] ?>)"><i class="btn btn-danger fas fa-trash  text-danger" ></i></a></td>
             </tr
 
             <?php

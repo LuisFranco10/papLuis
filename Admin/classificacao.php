@@ -37,17 +37,26 @@ drawTop();
         </thead>
         <tbody>
 
-        <tr>
-            <td class="text-center" width="10%"> 1 </td>
-            <td class="text-center" width="20%"> Sporting </td>
-            <td class="text-left" width="10%"> 1 </td>
-            <td class="text-center" width="10%"> 1 </td>
-            <td class="text-center" width="10%"> 0 </td>
-            <td class="text-center" width="10%"> 0 </td>
-            <td class="text-center" width="10%"> 1 </td>
-            <td class="text-center" width="10%"> 0 </td>
-            <td class="text-center" width="10%"> 3 </td>
-        </tr>
+        <?php
+        while ($dados = mysqli_fetch_array($result)) {
+            ?>
+
+            <tr class="active" data-number="1">
+                <td><a class="nolink"><?php echo $dados['clubeId'] ?></a></td>
+                <td><a class="nolink"><?php echo $dados['clubeNome'] ?></a></td>
+                <td><img id="img1" src="../<?php echo $dados['clubeEstadioURL'] ?>"></td>
+                <td><a class="nolink"><?php echo $dados['clubeFundacao'] ?></a></td>
+                <td><a class="nolink"><?php echo $dados['clubePresidenteNome'] ?> </a></td>
+                <td><img id="img1" src="../<?php echo $dados['clubeLogoImgUrl'] ?>"></td>
+                <td><a class="nolink"><?php echo $dados['clube'] ?> </a></td>
+                <td><a href="editar_clube.php"><i class="btn btn-primary fas fa-edit text-primary"></i></a><p></p>
+                    <a href="#" onclick="confirmaElimina(<?php echo $dados['clubeId'] ?>)"><i class="btn btn-danger fas fa-trash  text-danger" ></i></a></td>
+            </tr
+
+            <?php
+        }
+
+        ?>
 
 
         <?php

@@ -1,6 +1,6 @@
 <?php
 include_once ("includes/body.inc.php");
-$id=intval($_GET['id']);
+$con = mysqli_connect("localhost:3306","root","","futebol");$id=intval($_GET['id']);
 if(isset($_POST['epoca']))
     $epocaId=intval($_POST['epoca']);
 else
@@ -27,7 +27,7 @@ drawTop();
         </div>
         <div class="col-8 ">
             <img src="<?php echo $dados['clubeEstadioURL']?>"><br>
-            <span><strong>Ano da fundação: </strong><?php echo $dados['clubeFundacao']?></span><br>
+            <span><strong>Ano da fundacao: </strong><?php echo $dados['clubeFundacao']?></span><br>
             <span><strong>Presidente: </strong><?php echo $dados['clubePresidenteNome']?></span>
         </div>
 
@@ -40,7 +40,7 @@ drawTop();
         <thead >
         <tr>
             <td colspan="5" align="right">
-                <label>Época: </label>
+                <label>epoca: </label>
                 <form action="" method="post">
                 <select name="epoca">
                     <?php
@@ -61,9 +61,9 @@ drawTop();
         </tr>
             <tr style="background-color: rgb(<?php echo $dados['clubeSkin']?>);color: white;">
                 <th class="text-center" width="10%">Foto</th>
-                <th class="text-center" width="10%">Nº</th>
+                <th class="text-center" width="10%">Nï¿½</th>
                 <th class="text-center" width="35%">Nome</th>
-                <th class="text-center" width="30%">Posição</th>
+                <th class="text-center" width="30%">Posicao</th>
                 <th class="text-center" width="15%">Nacionalidade</th>
             </tr>
         </thead>

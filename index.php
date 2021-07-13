@@ -18,7 +18,7 @@ $con = mysqli_connect("localhost:3306","root","","futebol");
         </div>
         <!-- /.col-lg-8 -->
         <div class="col-lg-6">
-          <h1>Classificação</h1>
+          <h1>Classificacao</h1>
 
           <a class="btn btn-primary btn-lg" href="classificacao.php"
             >Saiba mais</a
