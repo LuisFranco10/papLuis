@@ -100,7 +100,7 @@ drawTop();
                 <td align="center"><a class="nolink"><?php echo $dadosD['totalD'] ?></a></td>
                 <td align="center"><a class="nolink"><?php echo $dadosGMC['totalGMCasa']+$dadosGMF['totalGMFora'] ?></a></td>
                 <td align="center"><a class="nolink"><?php echo $dadosGSC['totalGSCasa']+$dadosGSF['totalGSFora'] ?></a></td>
-                <td align="center"><a class="nolink"><?php echo $dados['totalPts'] ?></a></td>
+                <td align="center"><a class="nolink"><?php echo $dados['totalPts'] ?></a></td>a
             </tr>
 
             <?php
