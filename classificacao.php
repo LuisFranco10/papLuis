@@ -108,8 +108,13 @@ drawTop();
 
         ?>
 
-
-        <?php
+/*select clubes.*, sum(pontos.pontoValor) as pontos from pontos
+                    inner join jogos on jogos.jogoId = pontos.pontoJogoId
+                    inner join clubes on clubes.clubeId = jogos.jogoCasaClubeId or clubes.clubeId = jogos.jogoForaClubeId
+                    group by clubes.clubeId
+                    order by pontos desc
+                    ;*/
+                <?php
         /*
               while ($row = $result->fetch_assoc()) {
                    echo "<tr>";
