@@ -1,9 +1,12 @@
 <?php
 include_once ("includes/body.inc.php");
-$con = mysqli_connect("localhost:3306","root","","futebol");$id=intval($_GET['id']);
-$id=intval($_GET['id']);
-$sql="select * from clubes where clubeId=$id";
+
+$sql="select clubeId,clubeNome, sum(pontoValor) as totalPts
+from clubes left join pontos on clubeId=pontoClubeId
+group by 1
+order by totalPts desc";
 $result = mysqli_query($con, $sql);
+
 drawTop();
 ?>
 
@@ -30,8 +33,8 @@ drawTop();
             <th class="text-center" width="20%">Clube</th>
             <th class="text-center" width="10%">Jogos</th>
             <th class="text-center" width="10%">Vitorias</th>
-            <th class="text-center" width="10%">Derrotas</th>
             <th class="text-center" width="10%">Empates</th>
+            <th class="text-center" width="10%">Derrotas</th>
             <th class="text-center" width="10%">Golos Marcados</th>
             <th class="text-center" width="10%">Golos Sofridos</th>
             <th class="text-center" width="10%">Pontos</th>
@@ -40,20 +43,65 @@ drawTop();
         <tbody>
 
         <?php
+        $contador=0;
         while ($dados = mysqli_fetch_array($result)) {
+            $contador++;
+            $id=$dados['clubeId'];
+            $sql="select count(pontoJogoId) as totalJogos
+                    from pontos where pontoClubeId =$id";
+            $resJogos=mysqli_query($con,$sql);
+            $dadosJogos=mysqli_fetch_array($resJogos);
+
+            $sql="select count(pontoJogoId) as totalV
+	        from  pontos where pontoResultado='V' and pontoClubeId =$id";
+            $resV=mysqli_query($con,$sql);
+            $dadosV=mysqli_fetch_array($resV);
+            $sql="select count(pontoJogoId) as totalE
+	        from  pontos where pontoResultado='E' and pontoClubeId =$id";
+            $resE=mysqli_query($con,$sql);
+            $dadosE=mysqli_fetch_array($resE);
+            $sql="select count(pontoJogoId) as totalD
+	        from  pontos where pontoResultado='D' and pontoClubeId =$id";
+            $resD=mysqli_query($con,$sql);
+            $dadosD=mysqli_fetch_array($resD);
+
+
+
+            $sql="select sum(jogoCasaGolos) as totalGMCasa
+                  from jogos where jogoCasaClubeId=$id";
+            $resGMC=mysqli_query($con,$sql);
+            $dadosGMC=mysqli_fetch_array($resGMC);
+
+            $sql="select sum(jogoForaGolos) as totalGMFora
+                  from jogos where jogoForaClubeId=$id";
+            $resGMF=mysqli_query($con,$sql);
+            $dadosGMF=mysqli_fetch_array($resGMF);
+
+            $sql="select sum(jogoCasaGolos) as totalGSCasa
+                  from jogos where jogoForaClubeId=$id";
+            $resGSC=mysqli_query($con,$sql);
+            $dadosGSC=mysqli_fetch_array($resGSC);
+
+            $sql="select sum(jogoForaGolos) as totalGSFora
+                  from jogos where jogoCasaClubeId=$id";
+            $resGSF=mysqli_query($con,$sql);
+            $dadosGSF=mysqli_fetch_array($resGSF);
+
+
+
             ?>
 
             <tr class="active" data-number="1">
-                <td><a class="nolink"><?php echo $dados['clubeId'] ?></a></td>
+                <td align="center"><?php echo $contador?></td>
                 <td><a class="nolink"><?php echo $dados['clubeNome'] ?></a></td>
-                <td><img id="img1" src="../<?php echo $dados['clubeEstadioURL'] ?>"></td>
-                <td><a class="nolink"><?php echo $dados['clubeFundacao'] ?></a></td>
-                <td><a class="nolink"><?php echo $dados['clubePresidenteNome'] ?> </a></td>
-                <td><img id="img1" src="../<?php echo $dados['clubeLogoImgUrl'] ?>"></td>
-                <td><a class="nolink"><?php echo $dados['clube'] ?> </a></td>
-                <td><a href="jogador.php"><i class="btn btn-primary fas fa-edit text-primary"></i></a><p></p>
-                    <a href="#" onclick="confirmaElimina(<?php echo $dados['clubeId'] ?>)"><i class="btn btn-danger fas fa-trash  text-danger" ></i></a></td>
-            </tr
+                <td align="center"><a class="nolink"><?php echo $dadosJogos['totalJogos'] ?></a></td>
+                <td align="center"><a class="nolink"><?php echo $dadosV['totalV'] ?></a></td>
+                <td align="center"><a class="nolink"><?php echo $dadosE['totalE'] ?></a></td>
+                <td align="center"><a class="nolink"><?php echo $dadosD['totalD'] ?></a></td>
+                <td align="center"><a class="nolink"><?php echo $dadosGMC['totalGMCasa']+$dadosGMF['totalGMFora'] ?></a></td>
+                <td align="center"><a class="nolink"><?php echo $dadosGSC['totalGSCasa']+$dadosGSF['totalGSFora'] ?></a></td>
+                <td align="center"><a class="nolink"><?php echo $dados['totalPts'] ?></a></td>
+            </tr>
 
             <?php
         }
