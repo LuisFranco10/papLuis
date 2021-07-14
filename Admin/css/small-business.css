@@ -8,6 +8,12 @@ body {
   padding-top: 54px;
 }
 
+.js .animate-box {
+
+    color: #212529;
+}
+
+
 @media (min-width: 992px) {
   body {
     padding-top: 56px;

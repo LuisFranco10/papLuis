@@ -100,7 +100,7 @@ drawTop();
                 <td align="center"><a class="nolink"><?php echo $dadosD['totalD'] ?></a></td>
                 <td align="center"><a class="nolink"><?php echo $dadosGMC['totalGMCasa']+$dadosGMF['totalGMFora'] ?></a></td>
                 <td align="center"><a class="nolink"><?php echo $dadosGSC['totalGSCasa']+$dadosGSF['totalGSFora'] ?></a></td>
-                <td align="center"><a class="nolink"><?php echo $dados['totalPts'] ?></a></td>a
+                <td align="center"><a class="nolink"><?php echo $dados['totalPts'] ?></a></td>
             </tr>
 
             <?php
@@ -108,12 +108,7 @@ drawTop();
 
         ?>
 
-/*select clubes.*, sum(pontos.pontoValor) as pontos from pontos
-                    inner join jogos on jogos.jogoId = pontos.pontoJogoId
-                    inner join clubes on clubes.clubeId = jogos.jogoCasaClubeId or clubes.clubeId = jogos.jogoForaClubeId
-                    group by clubes.clubeId
-                    order by pontos desc
-                    ;*/
+
                 <?php
         /*
               while ($row = $result->fetch_assoc()) {

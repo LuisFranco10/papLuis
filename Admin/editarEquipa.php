@@ -12,12 +12,18 @@ $con = mysqli_connect("localhost:3306","root","","futebol");
                 <div class="col text-center">
 
                 </div>
-                <h1 align="center"><img src="./imgs/123.jpg""></h1>
+
+
+
+
+
 
 
             </div>
 
-
+            <div class="desc animate-box">
+                <button class="btn btn-primary" style="height: 60px; width: 300px" onclick="location.href='adicionarEquipa.php'"><strong>ADICIONAR </strong></a><i class="icon-plus3"></i></button>
+            </div>
 
         </div>
 
@@ -25,15 +31,8 @@ $con = mysqli_connect("localhost:3306","root","","futebol");
         <table class="table table-striped table-hover">
             <thead >
             <tr style="background-color: #000000;color: white;">
-                <th class="text-center" width="10%">Posicao</th>
-                <th class="text-center" width="20%">Clube</th>
-                <th class="text-center" width="10%">Jogos</th>
-                <th class="text-center" width="10%">Vitorias</th>
-                <th class="text-center" width="10%">Derrotas</th>
-                <th class="text-center" width="10%">Empates</th>
-                <th class="text-center" width="10%">Golos Marcados</th>
-                <th class="text-center" width="10%">Golos Sofridos</th>
-                <th class="text-center" width="10%">Pontos</th>
+                <th class="text-center" align="left">Editar equipas</th>
+
             </tr>
             </thead>
             <tbody>
@@ -48,11 +47,11 @@ while ($dados = mysqli_fetch_array($result)){
 
 <tr>
 
-    <td class="text-center" width="10%"><?php echo $dados['clubeId']?></td>
-    <td class="text-center" width="35%"><?php echo $dados['clubeNome']?></td>
-    <td class="text-center" width="15%"><?php echo $dados['clubeFundacao']?></td>
-    <td class="text-center" width="30%"><?php echo $dados['clubePresidenteNome']?></td>
-    <td class="text-center" width="30%"><?php echo $dados['clubeLogoURL']?></td>
+    <td class="text-center"><?php echo $dados['clubeLogoURL']?></td>
+    <td class="text-center"><?php echo $dados['clubeNome']?></td>
+    <td class="text-center"><?php echo $dados['clubeFundacao']?></td>
+    <td class="text-center"><?php echo $dados['clubePresidenteNome']?></td>
+    <td class="text-center"><?php echo $dados['clubeLogoURL']?></td>
 
 </tr>
 

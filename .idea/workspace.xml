@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4b30a10-2715-48f9-8381-66316d9d8a60" name="Default Changelist" comment="[Leandro] - classificacao" />
+    <list default="true" id="e4b30a10-2715-48f9-8381-66316d9d8a60" name="Default Changelist" comment="almoço 13 julho">
+      <change afterPath="$PROJECT_DIR$/Admin/adicionarEquipa.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baseDados_/pap2021luisfranco_v2.mwb.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/css/small-business.css" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/css/small-business.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/editarEquipa.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/editarEquipa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseDados_/pap2021luisfranco_v2.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/baseDados_/pap2021luisfranco_v2.mwb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classificacao.php" beforeDir="false" afterPath="$PROJECT_DIR$/classificacao.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +36,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../index.php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PapRui2021" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -45,6 +53,7 @@
       <updated>1625572473760</updated>
       <workItem from="1625572475154" duration="866000" />
       <workItem from="1626186426653" duration="2870000" />
+      <workItem from="1626270600192" duration="5460000" />
     </task>
     <task id="LOCAL-00001" summary="[Leandro] - atualização do config">
       <created>1625572733634</created>
