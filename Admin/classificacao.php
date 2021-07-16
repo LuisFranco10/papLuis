@@ -2,6 +2,7 @@
 include_once ("includes/body.inc.php");
 $id=intval($_GET['id']);
 $sql="select * from clubes where clubeId=$id";
+$result = mysqli_query($con, $sql);
 drawTop();
 ?>
 

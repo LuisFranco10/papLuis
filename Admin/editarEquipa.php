@@ -47,11 +47,11 @@ while ($dados = mysqli_fetch_array($result)){
 
 <tr>
 
-    <td class="text-center"><?php echo $dados['clubeLogoURL']?></td>
-    <td class="text-center"><?php echo $dados['clubeNome']?></td>
-    <td class="text-center"><?php echo $dados['clubeFundacao']?></td>
-    <td class="text-center"><?php echo $dados['clubePresidenteNome']?></td>
-    <td class="text-center"><?php echo $dados['clubeLogoURL']?></td>
+    <td class="text-center"><a class="nolink"><?php echo $dados['clubeLogoURL']?></a></td>
+    <td class="text-center"><a class="nolink"><?php echo $dados['clubeNome']?></a></td>
+    <td class="text-center"><a class="nolink"><?php echo $dados['clubeFundacao']?></a></td>
+    <td class="text-center"><a class="nolink"><?php echo $dados['clubePresidenteNome']?></a></td>
+    <td class="text-center"><a class="nolink"><?php echo $dados['clubeLogoURL']?></a></td>
 
 </tr>
 

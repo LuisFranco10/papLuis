@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4b30a10-2715-48f9-8381-66316d9d8a60" name="Default Changelist" comment="almoço 13 julho">
-      <change afterPath="$PROJECT_DIR$/Admin/adicionarEquipa.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/baseDados_/pap2021luisfranco_v2.mwb.bak" afterDir="false" />
+    <list default="true" id="e4b30a10-2715-48f9-8381-66316d9d8a60" name="Default Changelist" comment="14 julho">
+      <change afterPath="$PROJECT_DIR$/Admin/adicionarJornada.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/confirmaAddEquipa.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/css/icomoon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/css/magnific-popup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/css/superfish.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/jogador.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Array" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/icomoon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/magnific-popup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/superfish.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sporting.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/css/small-business.css" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/css/small-business.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/adicionarEquipa.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/adicionarEquipa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/classificacao.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/classificacao.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Admin/editarEquipa.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/editarEquipa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baseDados_/pap2021luisfranco_v2.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/baseDados_/pap2021luisfranco_v2.mwb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classificacao.php" beforeDir="false" afterPath="$PROJECT_DIR$/classificacao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +51,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PapRui2021" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -53,7 +68,10 @@
       <updated>1625572473760</updated>
       <workItem from="1625572475154" duration="866000" />
       <workItem from="1626186426653" duration="2870000" />
-      <workItem from="1626270600192" duration="5460000" />
+      <workItem from="1626270600192" duration="5503000" />
+      <workItem from="1626339701494" duration="464000" />
+      <workItem from="1626442037407" duration="3016000" />
+      <workItem from="1626445280193" duration="1793000" />
     </task>
     <task id="LOCAL-00001" summary="[Leandro] - atualização do config">
       <created>1625572733634</created>
@@ -69,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626190682343</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="14 julho">
+      <created>1626276563828</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1626276563828</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,6 +116,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="[Leandro] - atualização do config" />
     <MESSAGE value="[Leandro] - classificacao" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Leandro] - classificacao" />
+    <MESSAGE value="14 julho" />
+    <option name="LAST_COMMIT_MESSAGE" value="14 julho" />
   </component>
 </project>

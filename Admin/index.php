@@ -11,7 +11,7 @@
     <!-- Heading Row -->
     <div class="row my-4">
         <div class="col-lg-6">
-            <a href="jogador.php"><img class="img-responsive" src="imagens/jogadores/brunoFernandes.jpg" height="150px" width="100px" alt="">
+            <a href="editarEquipa.php"><img class="img-responsive" src="imagens/jogadores/brunoFernandes.jpg" height="150px" width="100px" alt="">
             </a>
             <a> Editar Jogadores</a>
         </div>
@@ -20,6 +20,11 @@
 
             <a href="editarEquipa.php"><img class="img-responsive" src="imgs/123.jpg" height="150px" width="200px" alt=""></a>
             <a>Editar Clubes</a>
+
+            <div class="desc animate-box">
+                <button class="btn btn-primary" align="right" style="height: 60px; width: 300px" onclick="location.href='adicionarJornada.php'"><strong>Adicionar Jornada </strong></a><i class="icon-plus3"></i></button>
+
+            </div>
 
 
         </div>
@@ -36,9 +41,9 @@
         while ($dados = mysqli_fetch_array($result)){
             ?>
             <div class="col-md-4 mb-4">
-                    >
+
                         <div class="card-body">
-                            <"/>
+
                         </div>
                     </div>
                 </a>
@@ -93,7 +98,7 @@
 </div>
 </a>
 </div>
--->
+
 </div>
 <!-- /.row -->
 </div>

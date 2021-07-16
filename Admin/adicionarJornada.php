@@ -25,7 +25,7 @@ $result = mysqli_query($con, $sql);
                             <th><a class="btn btn-outline" style="cursor: default; width: 170px"><strong>Logotipo </strong></a></th>
                             <th><a class="nolink" style="cursor: default; width: 170px"><strong><!-- ESPAÇO --> </strong></a></th>
                         </tr>
-                        <form action="confirmaAddEquipa.php" method="post" enctype="multipart/form-data">
+                        <form action="confirmAddEquipa.php" method="post" enctype="multipart/form-data">
                             <tr class="active" data-number="1" style="background-color: #DEE2E6">
                                 <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="clubeNome" style="cursor: text; width: 170px; height: 50px"></td>
                                 <td><a class="nolink"></a><input class="btn btn-outline" type="file" name="clubeEstadioURL" style="cursor: text; width: 170px; height: 50px"></td>
