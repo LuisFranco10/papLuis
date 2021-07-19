@@ -1,7 +1,7 @@
 <?php
 include_once("Includes/body.inc.php");
 drawTop();
-$sql ="select * from equipas;";
+$sql ="select * from clubes;";
 $result = mysqli_query($con, $sql);
 ?>
 

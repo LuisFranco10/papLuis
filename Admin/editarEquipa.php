@@ -2,7 +2,7 @@
 include_once ("includes/body.inc.php");
 drawTop();
 
-$con = mysqli_connect("localhost:3306","root","","futebol");
+$con = mysqli_connect("localhost:3306","root","","pap2021luisfranco");
 ?>
 
     <div class="container" style="margin-top: 5%;">
@@ -47,11 +47,11 @@ while ($dados = mysqli_fetch_array($result)){
 
 <tr>
 
-    <td class="text-center"><a class="nolink"><?php echo $dados['clubeLogoURL']?></a></td>
     <td class="text-center"><a class="nolink"><?php echo $dados['clubeNome']?></a></td>
+    <td class="text-center"><a class="nolink"><img src="../<?php echo $dados['clubeEstadioURL'];?>" width="80"; height="80"></a></td>
     <td class="text-center"><a class="nolink"><?php echo $dados['clubeFundacao']?></a></td>
     <td class="text-center"><a class="nolink"><?php echo $dados['clubePresidenteNome']?></a></td>
-    <td class="text-center"><a class="nolink"><?php echo $dados['clubeLogoURL']?></a></td>
+    <td class="text-center"><a class="nolink"><img src="../<?php echo $dados['clubeLogoURL'];?>" width="80"; height="80"></a></td>
 
 </tr>
 

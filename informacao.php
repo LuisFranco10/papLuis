@@ -1,6 +1,6 @@
 <?php
 include_once ("includes/body.inc.php");
-$con = mysqli_connect("localhost:3306","root","","futebol");$id=intval($_GET['id']);
+$con = mysqli_connect("localhost:3306","root","","pap2021LuisFranco");$id=intval($_GET['id']);
 if(isset($_POST['epoca']))
     $epocaId=intval($_POST['epoca']);
 else
@@ -61,7 +61,7 @@ drawTop();
         </tr>
             <tr style="background-color: rgb(<?php echo $dados['clubeSkin']?>);color: white;">
                 <th class="text-center" width="10%">Foto</th>
-                <th class="text-center" width="10%">N�</th>
+                <th class="text-center" width="10%">N</th>
                 <th class="text-center" width="35%">Nome</th>
                 <th class="text-center" width="30%">Posicao</th>
                 <th class="text-center" width="15%">Nacionalidade</th>

@@ -11,23 +11,24 @@
     <!-- Heading Row -->
     <div class="row my-4">
         <div class="col-lg-6">
-            <a href="editarEquipa.php"><img class="img-responsive" src="imagens/jogadores/brunoFernandes.jpg" height="150px" width="100px" alt="">
+            <a href="adicionarEquipa.php"><img class="img-responsive" src="imgs/clubes.jpg" height="auto" width="100px" alt="">
             </a>
-            <a> Editar Jogadores</a>
+            <a><strong>Menu Clubes</strong></a>
         </div>
         <!-- /.col-lg-8 -->
         <div class="col-lg-6">
 
-            <a href="editarEquipa.php"><img class="img-responsive" src="imgs/123.jpg" height="150px" width="200px" alt=""></a>
-            <a>Editar Clubes</a>
+            <a href="adicionarJogador.php"><img class="img-responsive" src="imgs/jogadores.jpg" height="auto" width="200px" alt=""></a>
+            <a><strong>Menu Jogadores</strong></a>
 
-            <div class="desc animate-box">
-                <button class="btn btn-primary" align="right" style="height: 60px; width: 300px" onclick="location.href='adicionarJornada.php'"><strong>Adicionar Jornada </strong></a><i class="icon-plus3"></i></button>
+            <div class="col-lg-6">
+
+                <a href="adicionarJornada.php.php"><img class="img-responsive" src="imgs/calendario.png" height="auto" width="200px" alt=""></a>
+                <a><strong>Menu Jogadores</strong></a>
+
+
 
             </div>
-
-
-        </div>
 
         <!-- /.col-md-4 -->
     </div>
