@@ -11,7 +11,7 @@
     <!-- Heading Row -->
     <div class="row my-4">
         <div class="col-lg-6">
-            <a href="adicionarEquipa.php"><img class="img-responsive" src="imgs/clubes.jpg" height="auto" width="100px" alt="">
+            <a href="listaEquipas.php"><img class="img-responsive" src="imgs/clubes.jpg" height="auto" width="100px" alt="">
             </a>
             <a><strong>Menu Clubes</strong></a>
         </div>
