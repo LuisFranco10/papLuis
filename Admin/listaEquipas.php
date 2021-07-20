@@ -21,7 +21,7 @@ drawTop();
             </div>
 
             <div class="desc animate-box">
-                <button class="btn btn-primary" style="height: 60px; width: 300px" onclick="location.href='adicionarEquipa.php'"><strong>ADICIONAR </strong></a><i class="icon-plus3"></i></button>
+                <button class="btn btn-primary" style="height: 60px; width: 300px" onclick="location.href='novaEquipa.php'"><strong>ADICIONAR </strong></a><i class="icon-plus3"></i></button>
             </div>
 
         </div>
@@ -31,11 +31,11 @@ drawTop();
             <thead >
             <tr style="background-color: #000000;color: white;">
                 <th class="text-center" align="left">Equipa</th>
-                <th class="text-center" align="left">Logótipo</th>
-                <th class="text-center" align="left">Estádio</th>
-                <th class="text-center" align="left">Ano Fundação</th>
+                <th class="text-center" align="left">Logotipo</th>
+                <th class="text-center" align="left">EstÃ¡dio</th>
+                <th class="text-center" align="left">Ano FundaÃ§Ã£o</th>
                 <th class="text-center" align="left">Presidente</th>
-                <th colspan="2" class="text-center" align="left">Opções</th>
+                <th colspan="2" class="text-center" align="left">OpÃ§Ãµes</th>
 
             </tr>
             </thead>

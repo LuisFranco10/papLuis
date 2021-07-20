@@ -1,6 +1,6 @@
 <?php
 include_once ("includes/body.inc.php");
-$con = mysqli_connect("localhost:3306","root","","pap2021LuisFranco");$id=intval($_GET['id']);
+$con = mysqli_connect("localhost:3306","root","","pap2021luisfranco");$id=intval($_GET['id']);
 if(isset($_POST['epoca']))
     $epocaId=intval($_POST['epoca']);
 else

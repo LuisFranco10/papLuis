@@ -1,24 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4b30a10-2715-48f9-8381-66316d9d8a60" name="Default Changelist" comment="[Leandro] - classificacao">
-      <change afterPath="$PROJECT_DIR$/Admin/confirmaEditaEquipa.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Admin/confirmaEliminaEquipa.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Admin/eliminaEquipa.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Admin/novaEquipa.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/benfica.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagens/estadios/belem.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagens/estadios/luzBelem.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagens/logos/belem.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagens/logos/luzBelem.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Includes/body.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Includes/body.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/confirmaAddEquipa.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/confirmaAddEquipa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/editarEquipa.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/listaEquipas.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/equipas.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/editaEquipa.php" afterDir="false" />
+    <list default="true" id="e4b30a10-2715-48f9-8381-66316d9d8a60" name="Default Changelist" comment="20/07  almoço">
+      <change afterPath="$PROJECT_DIR$/Admin/adicionaJogo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/confirmaEditaJogador.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/confirmaEliminaJogador.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/confirmaNovoJogo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/editaJogador.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/eliminaJogador.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/imagens/estadios/telstar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/imagens/estadios/telstar2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/imagens/logos/aves.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/imagens/logos/bel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/imagens/logos/boa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/imagens/logos/chaves.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/imagens/logos/est.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/imagens/logos/fcp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/imagens/logos/fei.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/imagens/logos/mar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/imagens/logos/mor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/imagens/logos/pfe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/imagens/logos/portm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/imagens/logos/rAve.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/imagens/logos/scb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/imagens/logos/scp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/imagens/logos/slb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/imagens/logos/tond.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/imagens/logos/vfc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/imagens/logos/vsc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/listaJogador.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/listaJogos.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/novoJogador.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagens/estadios/telstar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagens/estadios/telstar2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagens/logos/aves.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/adicionarEquipa.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/adicionarJogador.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/adicionarJornada.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/confirmaAddJogador.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/confirmaAddJogador.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/editarJogador.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Array" beforeDir="false" afterPath="$PROJECT_DIR$/Array" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baseDados_/pap2021luisfranco_v2.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/baseDados_/pap2021luisfranco_v2.mwb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baseDados_/pap2021luisfranco_v2.mwb.bak" beforeDir="false" afterPath="$PROJECT_DIR$/baseDados_/pap2021luisfranco_v2.mwb.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/listaEquipas.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/listaEquipas.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/config.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/config.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/informacao.php" beforeDir="false" afterPath="$PROJECT_DIR$/informacao.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +88,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\papLuis\Admin" />
       <recent name="C:\wamp64\www\.____PAP2021\papLuisFranco\Admin" />
     </key>
   </component>
@@ -82,7 +108,9 @@
       <workItem from="1626445280193" duration="3332000" />
       <workItem from="1626689238689" duration="7233000" />
       <workItem from="1626729846878" duration="31000" />
-      <workItem from="1626773278519" duration="2256000" />
+      <workItem from="1626773278519" duration="2291000" />
+      <workItem from="1626791409718" duration="5780000" />
+      <workItem from="1626817315272" duration="3841000" />
     </task>
     <task id="LOCAL-00001" summary="[Leandro] - atualização do config">
       <created>1625572733634</created>
@@ -119,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626729860285</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="20/07  almoço">
+      <created>1626786969791</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1626786969791</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

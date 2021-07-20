@@ -10,25 +10,27 @@
 <div class="container">
     <!-- Heading Row -->
     <div class="row my-4">
-        <div class="col-lg-6">
-            <a href="listaEquipas.php"><img class="img-responsive" src="imgs/clubes.jpg" height="auto" width="100px" alt="">
+
+        <div class="col-lg-6" >
+            <a href="listaEquipas.php"style="margin-left: 100px; margin-bottom: -500px; position: absolute" ><img class="img-responsive" src="imgs/clubes.jpg" height="auto" width="100px" alt="">
             </a>
             <a><strong>Menu Clubes</strong></a>
         </div>
         <!-- /.col-lg-8 -->
         <div class="col-lg-6">
 
-            <a href="adicionarJogador.php"><img class="img-responsive" src="imgs/jogadores.jpg" height="auto" width="200px" alt=""></a>
+            <a href="listaJogador.php" ><img class="img-responsive" src="imgs/jogadores.jpg" height="auto" width="200px" alt=""></a>
             <a><strong>Menu Jogadores</strong></a>
 
             <div class="col-lg-6">
 
-                <a href="adicionarJornada.php.php"><img class="img-responsive" src="imgs/calendario.png" height="auto" width="200px" alt=""></a>
-                <a><strong>Menu Jogadores</strong></a>
+                <a href="listaJogos.php"><img class="img-responsive" src="imgs/calendario.png" height="auto" width="200px" alt=""></a>
+                <a><strong>Menu Jogos</strong></a>
 
 
 
             </div>
+
 
         <!-- /.col-md-4 -->
     </div>
