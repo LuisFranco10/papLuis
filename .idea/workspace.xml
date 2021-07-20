@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4b30a10-2715-48f9-8381-66316d9d8a60" name="Default Changelist" comment="16/07">
-      <change afterPath="$PROJECT_DIR$/Admin/equipas.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Admin/imgs/Clubes.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Admin/imgs/calendario.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Admin/imgs/jogadores.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Porto.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/Clubes.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/jogadores.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jogadores.jpg" afterDir="false" />
+    <list default="true" id="e4b30a10-2715-48f9-8381-66316d9d8a60" name="Default Changelist" comment="19/07">
+      <change afterPath="$PROJECT_DIR$/Admin/adicionarJogador.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/confirmaAddJogador.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/editarJogador.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aves.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/adicionarEquipa.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/adicionarEquipa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/editarEquipa.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/editarEquipa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Array" beforeDir="false" afterPath="$PROJECT_DIR$/Array" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/informacao.php" beforeDir="false" afterPath="$PROJECT_DIR$/informacao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sporting.png" beforeDir="false" afterPath="$PROJECT_DIR$/sporting.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +65,8 @@
       <workItem from="1626442037407" duration="3016000" />
       <workItem from="1626445280193" duration="3332000" />
       <workItem from="1626689238689" duration="7233000" />
+      <workItem from="1626729846878" duration="31000" />
+      <workItem from="1626773278519" duration="2256000" />
     </task>
     <task id="LOCAL-00001" summary="[Leandro] - atualização do config">
       <created>1625572733634</created>
@@ -103,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626447341601</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="19/07">
+      <created>1626729860285</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1626729860285</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +127,7 @@
     <MESSAGE value="[Leandro] - classificacao" />
     <MESSAGE value="14 julho" />
     <MESSAGE value="16/07" />
-    <option name="LAST_COMMIT_MESSAGE" value="16/07" />
+    <MESSAGE value="19/07" />
+    <option name="LAST_COMMIT_MESSAGE" value="19/07" />
   </component>
 </project>
