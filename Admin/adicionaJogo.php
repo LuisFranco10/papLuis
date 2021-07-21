@@ -12,59 +12,71 @@ drawTop();
         reader.readAsDataURL(event.target.files[0]);
     }
 </script>
-<div class="container " style="margin-top: 5%;">
-    <!-- Heading Row -->
-    <form action="confirmaNovoJogo.php" method="post" enctype="multipart/form-data">
-        <label> Equipa casa: </label>
-        <select name="jogoCasaClubeId">
-            <option value="-1">Escolha a equipa casa...</option>
-            <?php
-            $sql = "select * from clubes order by clubeNome";
-            $result = mysqli_query($con, $sql);
-            while ($dados = mysqli_fetch_array($result)) {
-                ?>
-                <option value="<?php echo $dados['clubeId'] ?>"><?php echo $dados['clubeNome'] ?></option>
-                <?php
-            }
+<div class="container text-center " style="margin-top: 5%;">
 
-            ?>
-        </select>
 
-        <label> Equipa fora: </label>
+                <table align="center" class="table table-striped" style="background-color: #D2E7F5">
+                    <tr>
+                        <th><a class="btn btn-outline" style="cursor: default; width: 130px"><strong>Equipa Casa </strong></a></th>
+                        <th><a class="btn btn-outline" style="cursor: default; width: 130px"><strong>Golos Casa </strong></a></th>
+                        <th><a class="btn btn-outline" style="cursor: default; width: 130px"><strong>Equipa Fora </strong></a></th>
+                        <th><a class="btn btn-outline" style="cursor: default; width: 130px"><strong>Golos Fora </strong></a></th>
+                        <th><a class="btn btn-outline" style="cursor: default; width: 130px"><strong>Data</strong></a></th>
+                        <th><a class="nolink" style="cursor: default; width: 170px"><strong><!-- ESPAÇO --> </strong></a></th>
+                    </tr>
+                    <form action="confirmaNovoJogo.php" method="post" enctype="multipart/form-data">
+                        <tr class="active" data-number="1" style="background-color: #DEE2E6">
+                            <td>
+                                <?php
+                                $sql="select * from clubes";
+                                $res=mysqli_query($con,$sql);
 
-        <select name="jogoForaClubeId">
-            <option value="-1">Escolha a equipa fora...</option>
-            <?php
-            $sql = "select * from clubes order by clubeNome";
-            $result = mysqli_query($con, $sql);
-            while ($dados = mysqli_fetch_array($result)) {
-                ?>
-                <option value="<?php echo $dados['clubeId'] ?>"><?php echo $dados['clubeNome'] ?></option>
-                <?php
-            }
+                                ?>
+                                <select name="jogoCasaClubeId" style="cursor: text; width: 170px; height: 50px">
+                                    <?php
+                                    while($dados=mysqli_fetch_array($res)){
+                                        ?>
+                                        <option value="<?php echo $dados['clubeId']?>"><?php echo $dados['clubeNome']?></option>
+                                        <?php
+                                    }
 
-            ?>
-        </select>
-        <br>
-        <label>Resultado:</label>
-
-        <input type="text" name="jogoCasaGolos" placeholder="Golos Casa">
-        <input type="text" name="jogoForaGolos" placeholder="Golos Fora">
-        <br>
-        <label>Data:</label>
-        <input type="date" name="jogoData">
-<br>
+                                    ?>
+                                </select>
 
 
 
-    <div class="text-right" >
-        <input type="Submit" class="btn btn-success" value="Adiciona"><br>
-        <button type="button" class="btn btn-black">Back</button>
-    </div>
+                            </td>
+                            <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="jogoCasaGolos" style="cursor: text; width: 170px; height: 50px"></td>
+ <td>
+                                <?php
+                                $sql="select * from clubes";
+                                $res=mysqli_query($con,$sql);
 
-    </form>
+                                ?>
+                                <select name="jogoForaClubeId" style="cursor: text; width: 170px; height: 50px">
+                                    <?php
+                                    while($dados=mysqli_fetch_array($res)){
+                                        ?>
+                                        <option value="<?php echo $dados['clubeId']?>"><?php echo $dados['clubeNome']?></option>
+                                        <?php
+                                    }
+
+                                    ?>
+                                </select>
+
+
+
+                            </td>
+                            <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="jogoForaGolos" style="cursor: text; width: 170px; height: 50px"></td>
+                            <td><a class="nolink"></a><input class="btn btn-outline" type="date" name="jogoData" style="cursor: text; width: 170px; height: 50px"></td>
+                            <td><a class="nolink"></a><input class="btn btn-success" type="submit" value="Adicionar" style="height: 50px; width: 150px; border-color: #3f3f3f""></td>
+
+                        </tr>
+                    </form>
+                    </tbody>
+                </table>
+
 </div>
-
 </div>
 
 <style>
