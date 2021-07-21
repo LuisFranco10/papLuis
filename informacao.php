@@ -1,6 +1,6 @@
 <?php
 include_once ("includes/body.inc.php");
-
+$id=intval($_GET['id']);
 $sql="select * from clubes where clubeId=$id";
 $result = mysqli_query($con,$sql);
 $dados = mysqli_fetch_array($result);
@@ -30,7 +30,7 @@ drawTop();
 
         <thead >
 
-            <tr style="background-color: rgb(<?php echo $dados['clubeSkin']?>);color: white;">
+            <tr style="background-color: rgb(<?php echo $dados['clubeSkin']?>);color: Black;">
                 <th class="text-center" width="10%">Foto</th>
                 <th class="text-center" width="10%">N</th>
                 <th class="text-center" width="35%">Nome</th>
@@ -40,7 +40,7 @@ drawTop();
         </thead>
         <tbody>
         <?php
-        $sql="select jogadores.* from jogadores inner join clubes on on clubes.clubeId = jogadores.jogadorClubeId";
+        $sql="select jogadores.* from jogadores inner join clubes on clubes.clubeId = jogadores.jogadorClubeId";
         $result=mysqli_query($con,$sql);
         while($dados=mysqli_fetch_array($result)) {
             ?>
