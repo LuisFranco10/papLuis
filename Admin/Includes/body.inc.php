@@ -1,4 +1,4 @@
-<?php header("content-type: text/html; charset=ISO-8859-1");
+<?php
 include_once ("config.inc.php");
 $con=mysqli_connect(HOST,USER,PASS,DB);
 $con->set_charset("utf-8");

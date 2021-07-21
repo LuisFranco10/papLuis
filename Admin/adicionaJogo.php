@@ -22,7 +22,7 @@ drawTop();
                         <th><a class="btn btn-outline" style="cursor: default; width: 130px"><strong>Equipa Fora </strong></a></th>
                         <th><a class="btn btn-outline" style="cursor: default; width: 130px"><strong>Golos Fora </strong></a></th>
                         <th><a class="btn btn-outline" style="cursor: default; width: 130px"><strong>Data</strong></a></th>
-                        <th><a class="nolink" style="cursor: default; width: 170px"><strong><!-- ESPAÇO --> </strong></a></th>
+                        <th><a class="nolink" style="cursor: default; width: 170px"><strong><!-- ESPAÃ‡O --> </strong></a></th>
                     </tr>
                     <form action="confirmaNovoJogo.php" method="post" enctype="multipart/form-data">
                         <tr class="active" data-number="1" style="background-color: #DEE2E6">
