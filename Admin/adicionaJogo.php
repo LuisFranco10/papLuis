@@ -35,15 +35,13 @@ drawTop();
                         <button type="button" class="btn btn-black">Back</button>
                     </a>
                 </div>
-                <div class="col-md-02">
-                    <input type="Submit" class="btn btn-success" value="Adiciona"><br>
-                </div>
+
 
                 <br>
                 <div class="col-md-1"></div>
                 <div class="col-md-5">
                     <label> Equipa: </label>
-                    <select name="equipaJogoCasa">
+                    <select name="jogoCasaClubeId">
                         <option value="-1">Escolha a equipa casa...</option>
                         <?php
                         $sql = "select * from clubes order by clubeNome";
@@ -58,12 +56,12 @@ drawTop();
                     </select>
                     <label>Resultado:</label>
 
-                    <input type="text" name="equipaGoloCasa" placeholder="Golos Casa">
+                    <input type="text" name="jogoCasaGolos" placeholder="Golos Casa">
                     <label>Data:</label><input type="date" name="jogoData">
                 </div>
                 <div class="col-md-5">
                     <label> Equipa: </label>
-                    <select name="equipaJogoFora">
+                    <select name="jogoForaClubeId">
                         <option value="-1">Escolha a equipa fora...</option>
                         <?php
                         $sql = "select * from clubes order by clubeNome";
@@ -79,11 +77,14 @@ drawTop();
                     <br>
                     <br>
                     <br>
-                    <input type="text" name="equipaGoloFora" placeholder="Golos Fora">
+                    <input type="text" name="jogoForaGolos" placeholder="Golos Fora">
                 </div>
 
                 <div class="col-md-1"></div>
                 </div>
+        <div class="col-md-02">
+            <input type="Submit" class="btn btn-success" value="Adiciona"><br>
+        </div>
             </form>
         </div>
     </div>

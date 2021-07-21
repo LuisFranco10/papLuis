@@ -14,7 +14,7 @@ drawTop();
 
             <div class="desc animate-box">
             <!-- Meter o adicionar a funcionar -->
-                <button class="btn btn-primary" style="height: 60px; width: 300px" onclick="location.href='novoJogo.php'"><strong>ADICIONAR </strong></a><i class="icon-plus3"></i></button>
+                <button class="btn btn-primary" style="height: 60px; width: 300px" onclick="location.href='adicionaJogo.php'"><strong>ADICIONAR </strong></a><i class="icon-plus3"></i></button>
             </div>
             
     </div>
