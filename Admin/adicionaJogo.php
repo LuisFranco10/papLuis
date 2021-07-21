@@ -35,6 +35,9 @@ drawTop();
 
                         ?>
                     </select>
+            </table>
+                </tr>
+            <br>
                     <label>Resultado:</label>
 
                     <input type="text" name="jogoCasaGolos" placeholder="Golos Casa">

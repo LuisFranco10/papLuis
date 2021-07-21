@@ -1,18 +1,9 @@
 <?php
 include_once ("includes/body.inc.php");
-$con = mysqli_connect("localhost:3306","root","","pap2021luisfranco");$id=intval($_GET['id']);
-if(isset($_POST['epoca']))
-    $epocaId=intval($_POST['epoca']);
-else
-{
-    $sql="select max(epocaId) as mx from epocas";
-    $result=mysqli_query($con,$sql);
-    $dados=mysqli_fetch_array($result);
-    $epocaId=$dados['mx'];
-}
+
 $sql="select * from clubes where clubeId=$id";
-$result=mysqli_query($con,$sql);
-$dados=mysqli_fetch_array($result);
+$result = mysqli_query($con,$sql);
+$dados = mysqli_fetch_array($result);
 drawTop();
 ?>
 
@@ -38,27 +29,7 @@ drawTop();
     <table class="table table-striped table-hover">
 
         <thead >
-        <tr>
-            <td colspan="5" align="right">
-                <label>epoca: </label>
-                <form action="" method="post">
-                <select name="epoca">
-                    <?php
-                    $sql="select * from epocas";
-                    $result=mysqli_query($con,$sql);
-                    while($dadosEpocas=mysqli_fetch_array($result)){
-                        echo ("<option value='".$dadosEpocas['epocaId']."'");
-                        if($dadosEpocas['epocaId']==$epocaId)
-                            echo " selected ";
-                        echo(">".$dadosEpocas['epocaNome']."</option>");
-                    }
-                    ?>
 
-                </select>
-                <button type="submit">Filtrar</button>
-                </form>
-            </td>
-        </tr>
             <tr style="background-color: rgb(<?php echo $dados['clubeSkin']?>);color: white;">
                 <th class="text-center" width="10%">Foto</th>
                 <th class="text-center" width="10%">N</th>
@@ -69,8 +40,7 @@ drawTop();
         </thead>
         <tbody>
         <?php
-        $sql="select jogadores.* from jogadores inner join plantel on jogadorId=plantelJogadorId
-                inner join clubes on clubeId=plantelClubeId where clubeId=$id and plantelEpocaId=".$epocaId;
+        $sql="select jogadores.* from jogadores inner join clubes on on clubes.clubeId = jogadores.jogadorClubeId";
         $result=mysqli_query($con,$sql);
         while($dados=mysqli_fetch_array($result)) {
             ?>
