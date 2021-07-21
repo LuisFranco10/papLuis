@@ -100,7 +100,7 @@ $con = mysqli_connect("localhost:3306","root","","pap2021luisfranco");
             </div>
           </a>
         </div>
-        -->
+
       </div>
       <!-- /.row -->
     </div>

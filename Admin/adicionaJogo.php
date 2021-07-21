@@ -12,10 +12,10 @@ drawTop();
         reader.readAsDataURL(event.target.files[0]);
     }
 </script>
-<div class="container" style="margin-top: 5%;">
+<div class="container " style="margin-top: 5%;">
     <!-- Heading Row -->
     <form action="confirmaNovoJogo.php" method="post" enctype="multipart/form-data">
-        <label> Equipa: </label>
+        <label> Equipa casa: </label>
         <select name="jogoCasaClubeId">
             <option value="-1">Escolha a equipa casa...</option>
             <?php
@@ -30,37 +30,34 @@ drawTop();
             ?>
         </select>
 
+        <label> Equipa fora: </label>
+
+        <select name="jogoForaClubeId">
+            <option value="-1">Escolha a equipa fora...</option>
+            <?php
+            $sql = "select * from clubes order by clubeNome";
+            $result = mysqli_query($con, $sql);
+            while ($dados = mysqli_fetch_array($result)) {
+                ?>
+                <option value="<?php echo $dados['clubeId'] ?>"><?php echo $dados['clubeNome'] ?></option>
+                <?php
+            }
+
+            ?>
+        </select>
         <br>
         <label>Resultado:</label>
-        <br>
+
         <input type="text" name="jogoCasaGolos" placeholder="Golos Casa">
+        <input type="text" name="jogoForaGolos" placeholder="Golos Fora">
         <br>
         <label>Data:</label>
         <input type="date" name="jogoData">
-</div>
 <br>
-<div class="col-md-5">
-    <label> Equipa: </label>
 
-    <select name="jogoForaClubeId">
-        <option value="-1">Escolha a equipa fora...</option>
-        <?php
-        $sql = "select * from clubes order by clubeNome";
-        $result = mysqli_query($con, $sql);
-        while ($dados = mysqli_fetch_array($result)) {
-            ?>
-            <option value="<?php echo $dados['clubeId'] ?>"><?php echo $dados['clubeNome'] ?></option>
-            <?php
-        }
 
-        ?>
-    </select>
-    <br>
-    <br>
-    <br>
-    <input type="text" name="jogoForaGolos" placeholder="Golos Fora">
 
-    <div class="col-md-02">
+    <div class="text-right" >
         <input type="Submit" class="btn btn-success" value="Adiciona"><br>
         <button type="button" class="btn btn-black">Back</button>
     </div>

@@ -28,7 +28,26 @@ drawTop();
                                         <td><a class="nolink"></a><input class="btn btn-outline" type="file" name="jogadorFotoURL" style="cursor: text; width: 170px; height: 50px"></td>
                                         <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="jogadorNumero" style="cursor: text; width: 170px; height: 50px"></td>
                                         <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="jogadorNome" style="cursor: text; width: 170px; height: 50px"></td>
-                                        <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="jogadorClubeId" style="cursor: text; width: 170px; height: 50px"></td>
+                                        <td>
+                                            <?php
+                                            $sql="select * from clubes";
+                                            $res=mysqli_query($con,$sql);
+
+                                            ?>
+                                            <select name="jogadorClubeId" style="cursor: text; width: 170px; height: 50px">
+                                                <?php
+                                                while($dados=mysqli_fetch_array($res)){
+                                                    ?>
+                                                    <option value="<?php echo $dados['clubeId']?>"><?php echo $dados['clubeNome']?></option>
+                                                        <?php
+                                                }
+
+                                                ?>
+                                            </select>
+
+
+
+                                        </td>
                                         <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="jogadorPosicao" style="cursor: text; width: 170px; height: 50px"></td>
                                         <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="jogadorNacionalidade" style="cursor: text; width: 170px; height: 50px"></td>
                                         <td><a class="nolink"></a><input class="btn btn-success" type="submit" value="Adicionar" style="height: 50px; width: 150px; border-color: #3f3f3f""></td>

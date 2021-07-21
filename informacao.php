@@ -41,6 +41,7 @@ drawTop();
         <tbody>
         <?php
         $sql="select jogadores.* from jogadores inner join clubes on clubes.clubeId = jogadores.jogadorClubeId";
+        $sql.=" where clubeId=$id";
         $result=mysqli_query($con,$sql);
         while($dados=mysqli_fetch_array($result)) {
             ?>
