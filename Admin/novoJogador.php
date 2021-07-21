@@ -18,6 +18,7 @@ drawTop();
                                     <th><a class="btn btn-outline" style="cursor: default; width: 130px"><strong>Foto </strong></a></th>
                                     <th><a class="btn btn-outline" style="cursor: default; width: 130px"><strong>Numero </strong></a></th>
                                     <th><a class="btn btn-outline" style="cursor: default; width: 130px"><strong>Nome</strong></a></th>
+                                    <th><a class="btn btn-outline" style="cursor: default; width: 130px"><strong>Clube</strong></a></th>
                                     <th><a class="btn btn-outline" style="cursor: default; width: 200px"><strong>Posição </strong></a></th>
                                     <th><a class="btn btn-outline" style="cursor: default; width: 170px"><strong>Nacionalidade</strong></a></th>
                                     <th><a class="nolink" style="cursor: default; width: 170px"><strong><!-- ESPAÇO --> </strong></a></th>
@@ -27,6 +28,7 @@ drawTop();
                                         <td><a class="nolink"></a><input class="btn btn-outline" type="file" name="jogadorFotoURL" style="cursor: text; width: 170px; height: 50px"></td>
                                         <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="jogadorNumero" style="cursor: text; width: 170px; height: 50px"></td>
                                         <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="jogadorNome" style="cursor: text; width: 170px; height: 50px"></td>
+                                        <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="jogadorClubeId" style="cursor: text; width: 170px; height: 50px"></td>
                                         <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="jogadorPosicao" style="cursor: text; width: 170px; height: 50px"></td>
                                         <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="jogadorNacionalidade" style="cursor: text; width: 170px; height: 50px"></td>
                                         <td><a class="nolink"></a><input class="btn btn-success" type="submit" value="Adicionar" style="height: 50px; width: 150px; border-color: #3f3f3f""></td>

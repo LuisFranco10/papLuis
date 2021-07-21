@@ -14,7 +14,7 @@ drawTop();
     <!-- Heading Row -->
     <div class="row my-4">
         <div class="col-4 ">
-            <a class="btn btn-primary1" href="classificacaoMarcadores.php"> Classificacao Marcadores</a>
+
 
             <h1 align="center"><img src="./imgs/123.jpg""></h1>
 

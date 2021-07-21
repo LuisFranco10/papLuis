@@ -2,7 +2,7 @@
   include_once ("includes/body.inc.php");
   drawTop();
 
-$con = mysqli_connect("localhost:3306","root","","futebol");
+$con = mysqli_connect("localhost:3306","root","","pap2021luisfranco");
 ?>
 
 

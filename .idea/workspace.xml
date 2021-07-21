@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4b30a10-2715-48f9-8381-66316d9d8a60" name="Default Changelist" comment="[Leandro] - reformulação do admin">
-      <change afterPath="$PROJECT_DIR$/Admin/confirmaEliminaJogo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/baseDados_/pap2021luisfranco_v3.mwb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/baseDados_/pap2021luisfranco_v3.mwb.bak" afterDir="false" />
+    <list default="true" id="e4b30a10-2715-48f9-8381-66316d9d8a60" name="Default Changelist" comment="20/07  lanche">
+      <change afterPath="$PROJECT_DIR$/imagens/jogadores/alvalade.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Includes/body.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Includes/body.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Admin/adicionaJogo.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/adicionaJogo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/confirmaNovoJogo.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/confirmaNovoJogo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/eliminaJogo.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/eliminaJogo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/listaJogos.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/listaJogos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/confirmaAddJogador.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/confirmaAddJogador.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/confirmaEditaJogador.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/confirmaEditaJogador.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/editaJogador.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/editaJogador.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/listaJogador.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/listaJogador.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/novoJogador.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/novoJogador.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classificacao.php" beforeDir="false" afterPath="$PROJECT_DIR$/classificacao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +57,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\.____PAP2021\papLuisFranco\Admin" />
       <recent name="C:\wamp64\www\papLuis\Admin" />
+      <recent name="C:\wamp64\www\.____PAP2021\papLuisFranco\Admin" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -76,7 +79,8 @@
       <workItem from="1626729846878" duration="31000" />
       <workItem from="1626773278519" duration="2291000" />
       <workItem from="1626791409718" duration="5780000" />
-      <workItem from="1626817315272" duration="3841000" />
+      <workItem from="1626817315272" duration="4782000" />
+      <workItem from="1626829579406" duration="2772000" />
     </task>
     <task id="LOCAL-00001" summary="[Leandro] - atualização do config">
       <created>1625572733634</created>
@@ -120,7 +124,21 @@
       <option name="project" value="LOCAL" />
       <updated>1626786969791</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="20/07  lanche">
+      <created>1626824609459</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1626824609459</updated>
+    </task>
+    <task id="LOCAL-00008" summary="20/07  lanche">
+      <created>1626824882794</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1626824882794</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +163,7 @@
     <MESSAGE value="14 julho" />
     <MESSAGE value="16/07" />
     <MESSAGE value="19/07" />
-    <option name="LAST_COMMIT_MESSAGE" value="19/07" />
+    <MESSAGE value="20/07  lanche" />
+    <option name="LAST_COMMIT_MESSAGE" value="20/07  lanche" />
   </component>
 </project>

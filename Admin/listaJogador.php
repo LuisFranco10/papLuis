@@ -33,6 +33,7 @@ drawTop();
                 <th class="text-center" align="left">Foto</th>
                 <th class="text-center" align="left">Numero</th>
                 <th class="text-center" align="left">Nome</th>
+                <th class="text-center" align="left">Clube</th>
                 <th class="text-center" align="left">Posição</th>
                 <th class="text-center" align="left">Nacionalidade</th>
                 <th colspan="2" class="text-center" align="left">Opções</th>
@@ -42,7 +43,7 @@ drawTop();
             <tbody>
 
 <?php
-        $sql="select * from jogadores";
+        $sql="select * from jogadores inner join clubes on clubes.clubeId = jogadores.jogadorClubeId";
         $result=mysqli_query($con,$sql);
         while ($dados = mysqli_fetch_array($result)){
     ?>
@@ -51,6 +52,7 @@ drawTop();
             <td class="text-center"><a class="nolink"><img src="../<?php echo $dados['jogadorFotoURL'];?>" width="80"; height="80"></a></td>
             <td class="text-center"><a class="nolink"><?php echo $dados['jogadorNumero']?></a></td>
             <td class="text-center"><a class="nolink"><?php echo $dados['jogadorNome']?></a></td>
+            <td class="text-center"><a class="nolink"><?php echo $dados['clubeNome']?></a></td>
             <td class="text-center"><a class="nolink"><?php echo $dados['jogadorPosicao']?></a></td>
             <td class="text-center"><a class="nolink"><?php echo $dados['jogadorNacionalidade']?></a></td>
             <td><a href="editaJogador.php?id=<?php echo $dados['jogadorId']?>" class="btn btn-sm btn-primary"> Editar</a> </td>
