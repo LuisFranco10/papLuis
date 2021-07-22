@@ -26,7 +26,7 @@ drawTop();
                                 <form action="confirmaAddJogador.php" method="post" enctype="multipart/form-data">
                                     <tr class="active" data-number="1" style="background-color: #DEE2E6">
                                         <td><a class="nolink"></a><input class="btn btn-outline" type="file" name="jogadorFotoURL" style="cursor: text; width: 170px; height: 50px"></td>
-                                        <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="jogadorNumero" style="cursor: text; width: 170px; height: 50px"></td>
+                                        <td><a class="nolink"></a><input class="btn btn-outline" type="text" onkeyup="this.value=this.value.replace(/[^\d]/,'')" name="jogadorNumero" style="cursor: text; width: 170px; height: 50px"></td>
                                         <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="jogadorNome" style="cursor: text; width: 170px; height: 50px"></td>
                                         <td>
                                             <?php

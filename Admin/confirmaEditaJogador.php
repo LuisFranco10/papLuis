@@ -1,6 +1,6 @@
 <?php
 include_once ("includes/body.inc.php");
-
+print_r($_POST);
 $id=intval($_POST['id']);
 $img='imagens/jogadores/'.$_FILES['jogadorFotoURL']['name'];
 $numero=addslashes($_POST['jogadorNumero']);
@@ -8,6 +8,7 @@ $nome=addslashes($_POST['jogadorNome']);
 $jCId=addslashes($_POST['jogadorClubeId']);
 $posicao=addslashes($_POST['jogadorPosicao']);
 $nacionalidade=addslashes($_POST['jogadorNacionalidade']);
+
 
 $sql="update jogadores set jogadorNumero='".$numero."', jogadorNome='".$nome."',jogadorClubeId='".$jCId."',jogadorPosicao='".$posicao."',jogadorNacionalidade='".$nacionalidade."'";
 
