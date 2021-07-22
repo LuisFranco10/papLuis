@@ -18,7 +18,7 @@ drawTop();
         </div>
         <div class="col-8 ">
             <img src="<?php echo $dados['clubeEstadioURL']?>"><br>
-            <span><strong>Ano da fundacao: </strong><?php echo $dados['clubeFundacao']?></span><br>
+            <span><strong>Ano da fundação: </strong><?php echo $dados['clubeFundacao']?></span><br>
             <span><strong>Presidente: </strong><?php echo $dados['clubePresidenteNome']?></span>
         </div>
 
@@ -32,9 +32,9 @@ drawTop();
 
             <tr style="background-color: rgb(<?php echo $dados['clubeSkin']?>);color: Black;">
                 <th class="text-center" width="10%">Foto</th>
-                <th class="text-center" width="10%">N</th>
+                <th class="text-center" width="10%">Nº</th>
                 <th class="text-center" width="35%">Nome</th>
-                <th class="text-center" width="30%">Posicao</th>
+                <th class="text-center" width="30%">Posição</th>
                 <th class="text-center" width="15%">Nacionalidade</th>
             </tr>
         </thead>
@@ -48,7 +48,7 @@ drawTop();
 
             <tr>
 
-                <td class="text-center" width="10%"><a href="jogador.php?id=<?php echo $dados['jogadorId']?>&cid=<?php echo $id?>"><img src="<?php echo $dados['jogadorFotoURL']?>" height="50"></a></td>
+                <td class="text-center" width="10%"><a <?php echo $id?>"><img src="<?php echo $dados['jogadorFotoURL']?>" height="50"></a></td>
                 <td class="text-center" width="10%"><?php echo $dados['jogadorNumero']?></td>
                 <td class="text-center" width="35%"><?php echo $dados['jogadorNome']?></td>
                 <td class="text-center" width="30%"><?php echo $dados['jogadorPosicao']?></td>
